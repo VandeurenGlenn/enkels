@@ -1,0 +1,33 @@
+{
+  "name": "enkels",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "cross-env NODE_ENV=development rollup -c -w",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "serve": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@vandeurenglenn/flex-elements": "^1.2.5",
+    "@vandeurenglenn/lite": "^0.2.37",
+    "@vandeurenglenn/lite-elements": "^0.3.35"
+  },
+  "devDependencies": {
+    "@material-symbols/svg-400": "^0.17.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "chokidar": "^3.6.0",
+    "cross-env": "^7.0.3",
+    "glob": "^10.3.12",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.13.2",
+    "rollup-plugin-material-symbols": "^2.1.5",
+    "tslib": "^2.6.2",
+    "websocket": "^1.0.34"
+  }
+}

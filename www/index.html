@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="white"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="black"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>Grondwerken Vic Enkels</title>
+    <!-- service-worker-placeholder -->
+    <style>
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        position: absolute;
+        inset: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+  <script>
+    const ws = new WebSocket(location.protocol === 'https:' ? 'wss://' + location.host : 'ws://' + location.host, 'reload-app')
+    ws.addEventListener('open', () => {
+      ws.addEventListener('message', () => location.reload())
+    })
+    
+  </script>
+  
+    <app-shell></app-shell>
+    <script type="module" src="./shell.js"></script>
+  </body>
+</html>
