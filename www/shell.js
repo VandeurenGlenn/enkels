@@ -2458,6 +2458,7 @@ let AppShell = (() => {
       }
 
       img {
+        max-height: 120px;
         margin: 12px 24px 32px 24px;
       }
     `
