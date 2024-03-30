@@ -10,6 +10,7 @@ export class HomeView extends LiteElement {
         align-items: center;
         width: 100%;
         box-sizing: border-box;
+        overflow-y: auto;
       }
     `
   ]

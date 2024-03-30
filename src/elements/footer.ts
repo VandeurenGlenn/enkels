@@ -43,7 +43,7 @@ export class FooterElement extends LiteElement {
   render() {
     return html`
       <flex-column class="footer-column">
-        <branding-element></branding-element>
+        <branding-element small></branding-element>
       </flex-column>
       <flex-it></flex-it>
       <flex-column class="footer-column">

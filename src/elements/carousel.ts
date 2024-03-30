@@ -15,13 +15,14 @@ export class CarouselElement extends LiteElement {
         max-width: 720px;
         height: 100%;
         width: 100%;
+        min-height: 230px;
         box-sizing: border-box;
-        position: relative;
       }
 
       img {
         transform: translateY(0);
         width: 100%;
+        height: 100%;
       }
 
       .animate-down,

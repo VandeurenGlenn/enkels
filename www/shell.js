@@ -2283,7 +2283,15 @@ customElements.define('flex-container', FlexContainer);
       img {
         width: 50%;
       }
-    `,
+
+      :host([small]) img {
+        width: 35%;
+      }
+
+      :host([small]) h1 {
+        font-size: 48px;
+      }
+    `
         ]; }
         render() {
             return x `
@@ -2352,7 +2360,7 @@ customElements.define('flex-container', FlexContainer);
         render() {
             return x `
       <flex-column class="footer-column">
-        <branding-element></branding-element>
+        <branding-element small></branding-element>
       </flex-column>
       <flex-it></flex-it>
       <flex-column class="footer-column">

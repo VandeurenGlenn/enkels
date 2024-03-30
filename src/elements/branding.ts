@@ -1,4 +1,4 @@
-import { LiteElement, css, html, customElement } from '@vandeurenglenn/lite';
+import { LiteElement, css, html, customElement } from '@vandeurenglenn/lite'
 
 @customElement('branding-element')
 export class BrandingElement extends LiteElement {
@@ -26,13 +26,21 @@ export class BrandingElement extends LiteElement {
       img {
         width: 50%;
       }
-    `,
-  ];
+
+      :host([small]) img {
+        width: 35%;
+      }
+
+      :host([small]) h1 {
+        font-size: 48px;
+      }
+    `
+  ]
 
   render() {
     return html`
     <img src="./assets/excavator.svg"></img>
     <h1>vic enkels</h1>
-    `;
+    `
   }
 }
