@@ -2372,7 +2372,7 @@ customElements.define('flex-container', FlexContainer);
 
         <flex-row>
           <custom-icon icon="mail"></custom-icon>
-          info@vicenkels.be
+          <a href="mailto:info@vicenkels.be">info@vicenkels.be</a>
         </flex-row>
       </flex-column>
     `;
